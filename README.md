@@ -1,21 +1,21 @@
 # CS506-Final-Project
 
-## - Project Goal:
+## Project Goal:
 Build a predictive model to estimate traffic volume based on historical data to
 identify key factors influencing traffic volume, analyze trends and patterns in traffic data, and evaluate the performance of different machine learning models for this task.
 
-## - Dataset Description
+##  Dataset Description
 This dataset,  TrafficVolumeData.csv,  provides a comprehensive view of traffic flow of Chicago city, capturing a variety of factors that influence it. It consists of 33,744 entries, meticulously recorded to reflect the dynamics of traffic volume. Each entry is an amalgamation of weather conditions, temporal factors, and traffic metrics
 
-## - Plan
+##  Plan
 Proposed Plan
 The project will follow a structured data science workflow:
 
-  ### - Data Collection:
+  ### Data Collection:
      - Load the dataset from traffic volume data csv on Kaggle.
      - Perform initial exploration to understand the structure and features.
   
-  ### - Data Preprocessing:
+  ### Data Preprocessing:
       - Handle missing values and outliers.
       - Encode categorical variables (e.g., weather conditions, holidays).
       - Feature engineering: Create new features such as:
@@ -24,12 +24,12 @@ The project will follow a structured data science workflow:
       - Holiday flag.
       - Weather severity index.
   
-  ### - Exploratory Data Analysis (EDA):
+  ### Exploratory Data Analysis (EDA):
      - Visualize trends in traffic volume over time.
      - Identify correlations between features and traffic volume.
      - Analyze the impact of weather, holidays, and time on traffic.
      
-  ### - Data Modelling (intended):
+  ### Data Modelling (intended):
       We will train and evaluate multiple machine learning models, including:
       - Linear Regression (with ridge regression and lasso regression)
       - Decision Trees.
@@ -37,7 +37,7 @@ The project will follow a structured data science workflow:
       - Gradient Boosting (e.g., XGBoost, LightGBM).
       - Neural Networks (optional).
   
-  ### - Data Visualization:
+  ###  Data Visualization:
       - Heatmap
       - Tableau
       
