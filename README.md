@@ -41,10 +41,10 @@ The project will follow a structured data science workflow:
       - Heatmap
       - Tableau
       
-## - Test Plan:
+## Test Plan:
 We plan to split the data into training and testing sets (80/20). In terms of evaluation metrics, we intend to use Mean Absolute Error (MAE), Mean Squared Error (MSE), R-squared (R²).
 
 To optimize the model performance, we intend to perform hyperparameter tuning using Grid Search or Random Search. We also plan to use cross-validation to ensure model robustness.
 
-## - Hyperlinks
+## Hyperlinks
 https://www.kaggle.com/datasets/bobaaayoung/trafficvolumedatacsv
