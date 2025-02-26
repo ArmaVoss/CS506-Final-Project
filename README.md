@@ -50,3 +50,7 @@ To optimize the model performance, we intend to perform hyperparameter tuning us
 
 ## Hyperlinks
 https://www.kaggle.com/datasets/bobaaayoung/trafficvolumedatacsv
+
+## Team Members
+Nilay Jain
+
