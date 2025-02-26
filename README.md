@@ -38,9 +38,9 @@ The project will follow a structured data science workflow:
       - Neural Networks (optional).
   
   ###  Data Visualization:
-      - Preliminary Visualization of the Data
+       Preliminary Visualization of the Data
         - Plot the data using T-SNE to visualize in a lower dimension
-      - Clustering
+       Clustering
         -Plot a heatmap of most common features that appear in each cluster
       
 ## Test Plan:
