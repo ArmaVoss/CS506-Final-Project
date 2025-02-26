@@ -38,7 +38,7 @@ The project will follow a structured data science workflow:
       - Neural Networks (optional).
   
   ###  Data Visualization:
-      - Heatmap
+      - Plot the data using T-SNE to visualize in a lower dimension
       - Tableau
       
 ## Test Plan:
