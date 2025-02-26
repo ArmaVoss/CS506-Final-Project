@@ -38,8 +38,10 @@ The project will follow a structured data science workflow:
       - Neural Networks (optional).
   
   ###  Data Visualization:
-      - Plot the data using T-SNE to visualize in a lower dimension
-      - Tableau
+      - Preliminary Visualization of the Data
+        - Plot the data using T-SNE to visualize in a lower dimension
+      - Clustering
+        -Plot a heatmap of most common features that appear in each cluster
       
 ## Test Plan:
 We plan to split the data into training and testing sets (80/20). In terms of evaluation metrics, we intend to use Mean Absolute Error (MAE), Mean Squared Error (MSE), R-squared (R²).
