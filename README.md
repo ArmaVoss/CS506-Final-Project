@@ -125,13 +125,9 @@ For this project, four different regression models were applied to predict traff
    A high-performance, scalable model widely used for structured data tasks.  
    - Tuned hyperparameters: `n_estimators`, `max_depth`, `learning_rate`, `subsample`, `colsample_bytree`.
 
----
-
 ### Hyperparameter Tuning
 - **R² Score**
 - **Root Mean Squared Error (RMSE)**
-
----
 
 ## Model Comparison and Inference Summary
 
@@ -164,8 +160,6 @@ For this project, four different regression models were applied to predict traff
 
 - **Decision Tree Classifier** outperformed Logistic Regression in accuracy, precision, and recall — capturing more complex decision boundaries effectively.
 - **Logistic Regression** struggled with the multi-class classification task, achieving only **39.8% accuracy**, likely due to its linear nature and lack of flexibility.
-
----
 
 ### Inference and Recommendations
 
