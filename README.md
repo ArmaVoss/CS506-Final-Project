@@ -1,4 +1,4 @@
-# Midterm Report
+# Traffic Flow Prediction for Chicago Midterm Report
 ## Data Preprocessing
 
 - Cleaned the dataset (e.g., replaced `nil`/missing values).
