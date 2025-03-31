@@ -20,7 +20,7 @@
   - Weather impact on traffic volume
 
 1. Hourly Traffic Trends
-<img src="figures/hourly_traffic_volume.png" width="400"/>
+<img src="figures/hourly_traffic_volume.png" width="500"/>
 
 -	Productivity Hours (6AM-6PM)
 -	Steady climb from 6AM with twin peaks at:
