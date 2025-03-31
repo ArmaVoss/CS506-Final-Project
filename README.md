@@ -163,16 +163,6 @@ For this project, **seven different regression models** were applied to predict 
 | Decision Tree Classifier  | 63.7%    | 0.55 – 0.78      | 0.60 – 0.73  |
 | Logistic Regression       | 39.8%    | 0.35 – 0.47      | 0.21 – 0.53  |
 
-### Observations
-
-- **Linear Regression, Ridge, and Lasso** all performed identically with R² ≈ 0.50 and RMSE ≈ 0.51, indicating limited ability to capture nonlinear patterns in the data.
-- **XGBoost Regressor** achieved the best results with an R² of **0.9753** and RMSE of **0.157**, showing excellent generalization and predictive performance.
-- **Random Forest Regressor** performed closely behind with R² of **0.92** and RMSE of **1.45**, making it a robust and interpretable choice.
-- **Support Vector Regressor (SVR)** lagged behind the ensemble methods, with R² of **0.87** and RMSE of **1.65**, possibly due to difficulty modeling feature interactions.
-
-- **Decision Tree Classifier** outperformed Logistic Regression in accuracy, precision, and recall — capturing more complex decision boundaries effectively.
-- **Logistic Regression** struggled with the multi-class classification task, achieving only **39.8% accuracy**, likely due to its linear nature and lack of flexibility.
-
 ### Inference and Recommendations
 
 - **XGBoost Regressor** is the recommended model for traffic volume prediction due to its superior performance and low error.
