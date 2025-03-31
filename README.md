@@ -83,9 +83,6 @@ For this project, four different regression models were applied to predict traff
 ---
 
 ### Hyperparameter Tuning
-
-Each model was optimized using `GridSearchCV` to explore the best hyperparameter combinations. Performance was evaluated using:
-
 - **R² Score**
 - **Root Mean Squared Error (RMSE)**
 
@@ -99,10 +96,18 @@ Each model was optimized using `GridSearchCV` to explore the best hyperparameter
 | Gradient Boosting         | 0.91     | 1.50  |
 | Support Vector Regressor  | 0.87     | 1.65  |
 | XGBoost Regressor         | 0.9753   | .157  |
+| Linear Regression         | 0.50     | 0.51  |
+| Ridge Regression          | 0.50     | 0.51  |
+| Lasso                     | 0.50     | 0.51  |
 
 #### Observations:
 -
 
+- ** Linear Regression**:
+  Achieved results with no regularization of Linear Regression R²: 0.50 and RMSE 0.51
+  Achieved results with Ridge Regression of R²: 0.50 and RMSE 0.51
+  Achieved results with Lasso Regression of R²: 0.50   and RMSE  0.51
+  
 - **XGBoost Regressor**:  
   Achieved the best results with an R² of **0.9753** and RMSE of **.157**, showing strong generalization and accuracy across hyperparameter combinations.
 
