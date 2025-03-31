@@ -40,6 +40,7 @@ We also tried two regularization methods, ridge regression (with regularization 
   - `alpha`: 1  
   - `lambda`: 10
 
+![Total Loss](figures/Total_Loss.png)
 ### Model Performance
 - **Training RMSE**: 0.095  
 - **Testing RMSE**: 0.158  
