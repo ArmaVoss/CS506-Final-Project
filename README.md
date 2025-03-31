@@ -24,23 +24,23 @@
 
 -	Productivity Hours (6AM-6PM)
 -	Steady climb from 6AM with twin peaks at:
-  -	~8AM (sharp school/work commute)
-  -	~5PM (more dispersed evening return)
+    -	~8AM (sharp school/work commute)
+    -	~5PM (more dispersed evening return)
 -	Midday plateau (10AM-3PM) suggests consistent commercial activity.
 -	Leisure Transition (6PM-9PM)
 -	Gradual decline but remains elevated vs. night
 -	Small bump at ~7PM likely from:
-  -	Dinner outings
-  -	Gym/errand runs
-  -	Ride-share leisure trips
+    -	Dinner outings
+    -	Gym/errand runs
+    -	Ride-share leisure trips
 -	Quiet Hours (9PM-6AM)
-  -	Traffic bottoms out at ~30% of peak capacity
-  -	Notable 3AM trough (lowest point in 24h cycle)
+    -	Traffic bottoms out at ~30% of peak capacity
+    -	Notable 3AM trough (lowest point in 24h cycle)
 -	Hidden Details
-  -	The 6AM "switch flip" - Traffic jumps 40% in 30 minutes when night becomes morning
-  -	Pre-noon dip - Small but consistent 11AM lull (coffee break effect?)
-  -	Evening steps - Clear 18:00 and 20:00 drops as people arrive home
-  -	Midnight anomaly - Tiny 11:50PM bump (bar closings/shift changes?)
+    -	The 6AM "switch flip" - Traffic jumps 40% in 30 minutes when night becomes morning
+    -	Pre-noon dip - Small but consistent 11AM lull (coffee break effect?)
+    -	Evening steps - Clear 18:00 and 20:00 drops as people arrive home
+    -	Midnight anomaly - Tiny 11:50PM bump (bar closings/shift changes?)
 
 
 
