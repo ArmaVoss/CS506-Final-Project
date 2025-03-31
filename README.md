@@ -19,7 +19,7 @@ We also tried two regularization methods, ridge regression (with regularization 
 |---------------------------|--------------------------------|-----------------|
 | Linear Regression  | 0.50              | 0.51      |
 | Ridge Regression   | 0.50              | 0.51      |
-| Lasso                      | 0.50              | 0.51      |
+| Lasso  Regression                    | 0.50              | 0.51      |
 
 
 ## XGBoost Model Summary
@@ -102,7 +102,7 @@ For this project, four different regression models were applied to predict traff
 | XGBoost Regressor         | 0.9753   | .157  |
 | Linear Regression         | 0.50     | 0.51  |
 | Ridge Regression          | 0.50     | 0.51  |
-| Lasso Regression           0.50     | 0.51  |
+| Lasso Regression          | 0.50     | 0.51  |
 
 #### Observations:
 - **Linear Regression**:
