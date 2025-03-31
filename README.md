@@ -9,6 +9,18 @@
 - Converted `time` into a float to represent the time of day numerically.
 - Applied **Label Encoding** to `year`, `month`, and `day` for model compatibility.
 
+## Exploratory Data Analysis
+- Goal: Spot patterns, anomalies, and correlations between different columns.
+- Analyze trends of traffic volume based on different parameters/conditions as is in the dataset.
+- Visualize these different ideas and explain notable changes in plots
+- Key insights to explore in this dataset:
+  - Hourly traffic volumes
+  - Traffic volumes for different days of the week
+  - Weekday v/s Weekend traffic volumes
+  - Weather impact on traffic volume
+ 
+<img src="figures/Total_Loss.png" width="400"/>
+
 
 ## Linear Regression Model 
 Using the pre-processed dataset, the linear regression model yielded a mean squared error of approximately 0.50 and an R-squared value of 0.51, the model explains about 51% of the variability in traffic volume, demonstrating a moderate fit that serves as a baseline for more complicated, non-linear models.
