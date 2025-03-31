@@ -102,10 +102,10 @@ For this project, four different regression models were applied to predict traff
 | XGBoost Regressor         | 0.9753   | .157  |
 | Linear Regression         | 0.50     | 0.51  |
 | Ridge Regression          | 0.50     | 0.51  |
-| Lasso                     | 0.50     | 0.51  |
+| Lasso Regression           0.50     | 0.51  |
 
 #### Observations:
-- ** Linear Regression**:
+- **Linear Regression**:
   Achieved results with no regularization of Linear Regression R²: 0.50 and RMSE 0.51
   Achieved results with Ridge Regression of R²: 0.50 and RMSE 0.51
   Achieved results with Lasso Regression of R²: 0.50   and RMSE  0.51
