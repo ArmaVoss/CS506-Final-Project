@@ -58,9 +58,25 @@
 3.	Comparing days of the week
 <img src="figures/hourly_traffic_by_day_of_week.png" width="500"/>
 
-<img src="figures/hourly_traffic_by_day_of_week.png" width="500"/>
+<img src="figures/Traffic_volume_by_time_and_week_coolwarm.png" width="500"/>
 
-<img src="figures/Traffic_volume_by_time_&_week_YlOrRd.png" width="500"/>
+<img src="figures/Traffic_volume_by_time_and_week_YlOrRd.png" width="500"/>
+
+| Day                      | Notable Inferences    |
+|---------------------------|--------------------------------|
+| Monday                    | None              |
+| Tuesday                   | None              |
+| Wednesday                    | None              |
+| Thursday                    | None              |
+| Friday                    | Higher noon spike, lower peak              |
+| Saturday                    | Spike in the evening              |
+| Sunday                    | Lower activity than Saturday            |
+
+Interesting Insights:
+- Friday traffic begins 2 hours earlier than midweek (3PM vs 5PM)
+- Weekend is pretty plateaued during 12-4PM
+- Higher activity in Friday as well as weekend evenings.
+
 
 ## Linear Regression Model 
 Using the pre-processed dataset, the linear regression model yielded a mean squared error of approximately 0.50 and an R-squared value of 0.51, the model explains about 51% of the variability in traffic volume, demonstrating a moderate fit that serves as a baseline for more complicated, non-linear models.
