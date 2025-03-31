@@ -47,8 +47,11 @@ We also tried two regularization methods, ridge regression (with regularization 
 - RMSE plot shows that after ~5–6 boosting rounds, the model generalizes well.
 - The small gap between training and testing RMSE indicates **no overfitting**.
 
-![Feature Importance](figures/Importance_by_weight.png)
-![Feature Importance](figures/Importance_by_gain.png)
+<div style="display: flex; gap: 10px;">
+  <img src="figures/Importance_by_weight.png" width="300"/>
+  <img src="figures/Importance_by_gain.png" width="300"/>
+</div>
+
 
 ### Feature Importance
 - **By Weight**:
