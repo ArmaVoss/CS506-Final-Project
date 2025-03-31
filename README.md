@@ -133,40 +133,43 @@ For this project, four different regression models were applied to predict traff
 
 ---
 
-### Model Performance
+## Model Comparison and Inference Summary
 
-| Model                     | R² Score | RMSE  |
-|---------------------------|----------|-------|
-| Random Forest Regressor   | 0.92     | 1.45  |
-| Gradient Boosting         | 0.91     | 1.50  |
-| Support Vector Regressor  | 0.87     | 1.65  |
-| XGBoost Regressor         | 0.9753   | .157  |
-| Linear Regression         | 0.50     | 0.51  |
-| Ridge Regression          | 0.50     | 0.51  |
-| Lasso Regression          | 0.50     | 0.51  |
+### Regression Model Performance
 
-#### Observations:
-- **Linear Regression**:
-  Achieved results with no regularization of Linear Regression R²: 0.50 and RMSE 0.51
-  Achieved results with Ridge Regression of R²: 0.50 and RMSE 0.51
-  Achieved results with Lasso Regression of R²: 0.50   and RMSE  0.51
-  
-- **XGBoost Regressor**:  
-  Achieved the best results with an R² of **0.9753** and RMSE of **.157**, showing strong generalization and accuracy across hyperparameter combinations.
+| Model                     | R² Score | RMSE   |
+|---------------------------|----------|--------|
+| XGBoost Regressor         | 0.9753   | 0.157  |
+| Random Forest Regressor   | 0.92     | 1.45   |
+| Gradient Boosting Regressor | 0.91   | 1.50   |
+| Support Vector Regressor  | 0.87     | 1.65   |
+| Linear Regression         | 0.50     | 0.51   |
+| Ridge Regression          | 0.50     | 0.51   |
+| Lasso Regression          | 0.50     | 0.51   |
 
-- **Random Forest Regressor**:  
-  Performed closely with an R² of **0.92** and RMSE of **1.45**, making it a robust and interpretable model.
 
-- **Support Vector Regressor (SVR)**:  
-  Lagged behind with an R² of **0.87** and RMSE of **1.65**, possibly due to limitations in capturing complex feature interactions in the data.
+### Classification Models
+
+| Model                     | Accuracy | Precision Range | Recall Range |
+|---------------------------|----------|------------------|--------------|
+| Decision Tree Classifier  | 63.7%    | 0.55 – 0.78      | 0.60 – 0.73  |
+| Logistic Regression       | 39.8%    | 0.35 – 0.47      | 0.21 – 0.53  |
+
+### Observations
+
+- **Linear Regression, Ridge, and Lasso** all performed identically with R² ≈ 0.50 and RMSE ≈ 0.51, indicating limited ability to capture nonlinear patterns in the data.
+- **XGBoost Regressor** achieved the best results with an R² of **0.9753** and RMSE of **0.157**, showing excellent generalization and predictive performance.
+- **Random Forest Regressor** performed closely behind with R² of **0.92** and RMSE of **1.45**, making it a robust and interpretable choice.
+- **Support Vector Regressor (SVR)** lagged behind the ensemble methods, with R² of **0.87** and RMSE of **1.65**, possibly due to difficulty modeling feature interactions.
+
+- **Decision Tree Classifier** outperformed Logistic Regression in accuracy, precision, and recall — capturing more complex decision boundaries effectively.
+- **Logistic Regression** struggled with the multi-class classification task, achieving only **39.8% accuracy**, likely due to its linear nature and lack of flexibility.
 
 ---
 
-### Inferences and Conclusion
+### Inference and Recommendations
 
-- **XGBoost Regressor** is recommended for future applications due to its superior performance and efficiency.
-- **Random Forest** remains a strong alternative, especially when interpretability or robustness to noisy data is important.
-- **Support Vector Regressor** was less effective in this scenario, suggesting it may not be ideal for this dataset's structure.
-
-These findings underscore the importance of model selection based on data characteristics and the trade-offs between accuracy, interpretability, and computational cost.
-
+- **XGBoost Regressor** is the recommended model for traffic volume prediction due to its superior performance and low error.
+- **Random Forest** is a solid fallback model, especially when interpretability or resilience to noise is needed.
+- **Decision Tree Classifier** is the best choice for classification tasks in this domain.
+- **Linear and logistic models** can serve as simple baselines, but they underperform significantly on this dataset.
