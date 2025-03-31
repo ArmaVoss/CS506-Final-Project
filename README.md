@@ -1,52 +1,61 @@
-# CS506-Final-Project
+# Model Comparison and Inferences
 
-## Project Goal:
-Build a predictive model to estimate traffic volume based on historical data to
-identify key factors influencing traffic volume, analyze trends and patterns in traffic data, and evaluate the performance of different machine learning models for this task.
+For this project, I applied three different models on the dataset, each targeting a specific problem formulation. The models evaluated were:
 
-##  Dataset Description
-This dataset,  TrafficVolumeData.csv,  provides a comprehensive view of traffic flow of Chicago city, capturing a variety of factors that influence it. It consists of 33,744 entries, meticulously recorded to reflect the dynamics of traffic volume. Each entry is an amalgamation of weather conditions, temporal factors, and traffic metrics
+---
 
-##  Plan
-Proposed Plan
-The project will follow a structured data science workflow:
+## MLP Regressor
 
-  ### Data Collection:
-     - Load the dataset from traffic volume data csv on Kaggle.
-     - Perform initial exploration to understand the structure and features.
-  
-  ### Data Preprocessing:
-      - Handle missing values and outliers.
-      - Encode categorical variables (e.g., weather conditions, holidays).
-      - Feature engineering: Create new features such as:
-      - Day of the week.
-      - Time of day (e.g., morning, afternoon, evening).
-      - Holiday flag.
-      - Weather severity index.
-  
-  ### Exploratory Data Analysis (EDA):
-     - Visualize trends in traffic volume over time.
-     - Identify correlations between features and traffic volume.
-     - Analyze the impact of weather, holidays, and time on traffic.
-     
-  ### Data Modelling (intended):
-      We will train and evaluate multiple machine learning models, including:
-      - Linear Regression (with ridge regression and lasso regression)
-      - Decision Trees.
-      - Random Forest.
-      - Gradient Boosting (e.g., XGBoost, LightGBM).
-      - Neural Networks (optional).
-  
-  ###  Data Visualization:
-       Preliminary Visualization of the Data
-        - Plot the data using T-SNE to visualize in a lower dimension
-       Clustering
-        - Plot a heatmap of most common features that appear in each cluster
-      
-## Test Plan:
-We plan to split the data into training and testing sets (80/20). In terms of evaluation metrics, we intend to use Mean Absolute Error (MAE), Mean Squared Error (MSE), R-squared (R²).
+A neural network-based regression model was employed to predict a continuous target variable. The key performance metrics for this model were:
 
-To optimize the model performance, we intend to perform hyperparameter tuning using Grid Search or Random Search. We also plan to use cross-validation to ensure model robustness.
+- **R² Score:** 0.493  
+  This indicates that the model explains about 49% of the variance in the target variable.
 
-## Hyperlinks
-https://www.kaggle.com/datasets/bobaaayoung/trafficvolumedatacsv
+- **Mean Squared Error (MSE):** 1.243  
+  On average, the squared error between the predicted and actual values is 1.243.
+
+*Inference:*  
+While the MLP Regressor captures a moderate amount of the data variability, there remains substantial unexplained variance.
+
+---
+
+## Logistic Regression
+
+This linear classification model was evaluated with the following performance metrics:
+
+- **Accuracy:** 39.8%  
+  The model correctly classified about 40% of the instances.
+
+- **Confusion Matrix and Classification Report:**  
+  The confusion matrix shows significant misclassification across classes, and the precision and recall values (ranging roughly from 0.35 to 0.47 and 0.21 to 0.53, respectively) indicate that the model is struggling to correctly identify instances for each class.
+
+*Inference:*  
+Logistic regression, which relies on linear decision boundaries, seems insufficient to capture the complexity of the data’s class structure. Its lower overall accuracy and imbalanced performance across classes suggest that a more flexible or non-linear model might be more appropriate.
+
+---
+
+## Decision Tree Classifier
+
+This model builds a tree-like structure to classify the data and is capable of modeling non-linear relationships. The performance metrics were:
+
+- **Accuracy:** 63.7%  
+  The decision tree correctly classified approximately 64% of the instances.
+
+- **Confusion Matrix and Classification Report:**  
+  With precision values ranging from 0.55 to 0.78 and recall values from 0.60 to 0.73 across classes, the decision tree provides a more balanced performance compared to logistic regression.
+
+*Inference:*  
+The decision tree classifier outperformed logistic regression by capturing more complex patterns in the data, leading to higher overall accuracy and better class-wise performance.
+
+---
+
+## Summary
+
+- **MLP Regressor (Regression):**  
+  Achieved a moderate performance with an R² of 0.493 and an MSE of 1.243. This indicates that while the model explains nearly half of the variance, there is room for improvement.
+
+- **Logistic Regression (Classification):**  
+  With an accuracy of about 40%, logistic regression struggled with the multi-class problem, likely due to its reliance on linear separability which does not sufficiently capture the data’s complexity.
+
+- **Decision Tree Classifier (Classification):**  
+  The best performer among the classification models with an accuracy of 63.7% and more balanced precision and recall scores across classes. Its ability to model non-linear relationships makes it a strong candidate for this dataset.
