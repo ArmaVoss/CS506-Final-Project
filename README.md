@@ -116,7 +116,7 @@ Each model was optimized using `GridSearchCV` to explore the best hyperparameter
 
 ---
 
-### 🧠 Inferences and Conclusion
+### Inferences and Conclusion
 
 - **XGBoost Regressor** is recommended for future applications due to its superior performance and efficiency.
 - **Random Forest** remains a strong alternative, especially when interpretability or robustness to noisy data is important.
