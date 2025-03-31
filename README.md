@@ -98,18 +98,16 @@ Each model was optimized using `GridSearchCV` to explore the best hyperparameter
 | Random Forest Regressor   | 0.92     | 1.45  |
 | Gradient Boosting         | 0.91     | 1.50  |
 | Support Vector Regressor  | 0.87     | 1.65  |
-| XGBoost Regressor         |          | .157  |
+| XGBoost Regressor         | 0.9753   | .157  |
 
 #### Observations:
+-
 
 - **XGBoost Regressor**:  
-  Achieved the best results with an R² of **0.93** and RMSE of **1.40**, showing strong generalization and accuracy across hyperparameter combinations.
+  Achieved the best results with an R² of **0.9753** and RMSE of **.157**, showing strong generalization and accuracy across hyperparameter combinations.
 
 - **Random Forest Regressor**:  
   Performed closely with an R² of **0.92** and RMSE of **1.45**, making it a robust and interpretable model.
-
-- **Gradient Boosting Regressor**:  
-  Also performed well, with an R² of **0.91** and RMSE of **1.50**, benefiting from its sequential error correction.
 
 - **Support Vector Regressor (SVR)**:  
   Lagged behind with an R² of **0.87** and RMSE of **1.65**, possibly due to limitations in capturing complex feature interactions in the data.
@@ -120,7 +118,6 @@ Each model was optimized using `GridSearchCV` to explore the best hyperparameter
 
 - **XGBoost Regressor** is recommended for future applications due to its superior performance and efficiency.
 - **Random Forest** remains a strong alternative, especially when interpretability or robustness to noisy data is important.
-- **Gradient Boosting** offers solid performance, though slightly outpaced by XGBoost and Random Forest.
 - **Support Vector Regressor** was less effective in this scenario, suggesting it may not be ideal for this dataset's structure.
 
 These findings underscore the importance of model selection based on data characteristics and the trade-offs between accuracy, interpretability, and computational cost.
