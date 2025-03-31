@@ -22,6 +22,50 @@ We also tried two regularization methods, ridge regression (with regularization 
 | Lasso  Regression                    | 0.50              | 0.51      |
 
 
+---
+
+## MLP Regressor (Regression)
+
+A neural network-based regression model was employed to predict a continuous target variable.
+
+### Performance Metrics
+- **R² Score**: 0.493  
+  This indicates that the model explains approximately 49% of the variance in the target variable.
+- **Mean Squared Error (MSE)**: 1.243  
+  On average, the squared error between the predicted and actual values is 1.243.
+
+While the MLP Regressor captures a moderate amount of the data variability, there remains substantial unexplained variance. Further improvements could come from deeper architectures or additional feature engineering.
+
+---
+
+## Logistic Regression (Classification)
+
+A linear classification model used to predict discrete classes in the dataset.
+
+### Performance Metrics
+- **Accuracy**: 39.8%  
+  The model correctly classified about 40% of the instances.
+
+### Evaluation Summary
+The confusion matrix showed significant misclassification across classes. Precision and recall values ranged roughly from 0.35 to 0.47 and 0.21 to 0.53, respectively, indicating the model struggled to correctly identify instances in each class.
+
+Logistic regression, which relies on linear decision boundaries, appears insufficient for capturing the complexity of the data’s class structure. Its lower accuracy and imbalanced performance across classes suggest that a more flexible or non-linear model might be better suited.
+
+---
+
+## Decision Tree Classifier (Classification)
+
+A decision tree classifier builds a tree-like structure to classify data and is capable of capturing non-linear relationships.
+
+### Performance Metrics
+- **Accuracy**: 63.7%  
+  The model correctly classified approximately 64% of the instances.
+
+### Evaluation Summary
+The classifier achieved precision values ranging from 0.55 to 0.78 and recall values from 0.60 to 0.73 across classes. This shows a more balanced performance compared to logistic regression.
+
+The decision tree model outperformed logistic regression by capturing more complex patterns in the data, leading to higher overall accuracy and stronger class-wise performance. It stands out as the best performer among the classification models evaluated.
+
 ## XGBoost Model Summary
 
 ### Data Preparation
