@@ -47,6 +47,9 @@ We also tried two regularization methods, ridge regression (with regularization 
 - RMSE plot shows that after ~5–6 boosting rounds, the model generalizes well.
 - The small gap between training and testing RMSE indicates **no overfitting**.
 
+![Feature Importance](figures/Importance_by_weight.png)
+![Feature Importance](figures/Importance_by_gain.png)
+
 ### Feature Importance
 - **By Weight**:
   - **Feature 10 (Temperature)** was the most frequently used for splits.
