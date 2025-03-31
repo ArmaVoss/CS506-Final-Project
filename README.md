@@ -10,7 +10,7 @@
 - Applied **Label Encoding** to `year`, `month`, and `day` for model compatibility.
 
 
-## Linear Regression Model Summary
+## Linear Regression Model 
 Using the pre-processed dataset, the linear regression model yielded a mean squared error of approximately 0.50 and an R-squared value of 0.51, the model explains about 51% of the variability in traffic volume, demonstrating a moderate fit that serves as a baseline for more complicated, non-linear models.
 
 We also tried two regularization methods, ridge regression (with regularization parameter alpha=10.0) and lasso(with regularization parameter alpha=.001), which yielded similar results:
@@ -63,7 +63,7 @@ With precision values ranging from 0.55 to 0.78 and recall values from 0.60 to 0
 
 The decision tree classifier outperformed logistic regression by capturing more complex patterns in the data, leading to higher overall accuracy and better class-wise performance. It was the best performer among the classification models, making it a strong candidate for this dataset due to its ability to model non-linear relationships.
 
-## XGBoost Model Summary
+## XGBoost Model 
 
 ### Data Preparation
 - Loaded the preprocessed traffic data.
