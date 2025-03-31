@@ -62,15 +62,15 @@
 
 <img src="figures/Traffic_volume_by_time_and_week_heatmap_coolwarm.png" width="750"/>
 
-| Day                      | Notable Inferences    |
+| Day                       | Notable Inferences    |
 |---------------------------|--------------------------------|
 | Monday                    | None              |
 | Tuesday                   | None              |
-| Wednesday                    | None              |
-| Thursday                    | None              |
-| Friday                    | Higher noon spike, lower peak              |
-| Saturday                    | Spike in the evening              |
-| Sunday                    | Lower activity than Saturday            |
+| Wednesday                 | None              |
+| Thursday                  | None              |
+| Friday                    | Higher noon spike, lower peak     |
+| Saturday                  | Spike in the evening              |
+| Sunday                    | Lower activity than Saturday      |
 
 Interesting Insights:
 - Friday traffic begins 2 hours earlier than midweek (3PM vs 5PM)
@@ -125,6 +125,23 @@ Unexpected Insights
 
 7. Correlation Heatmap
 <img src="figures/Weather_correlation_heatmap.png" width="750"/>
+| Variable Pair                 |Correlation(r)                     |Interpretation                          |
+|-------------------------------|-----------------------------------|----------------------------------------|
+| humidity ↔ wind_speed         | -0.15                             | Higher humidity → Lower wind speeds    |
+| wind_speed ↔ wind_direction   | 0.19                              | Wind speed/direction are weakly linked |
+| temperature ↔ clouds_all      | -0.12                             | Clearer skies → Higher temperatures    |
+| temperature ↔ traffic_volume  | 0.13                              | Warmer days → Slightly more traffic    |
+
+
+Insights
+- Strongest Influence:
+    - Temperature (+0.13)
+    - Cloud cover (+0.038)
+-	Negligible Influences:
+    -	Air pollution (r = -0.0038)
+    -	Wind conditions (r ≈ 0.016)
+- Unclear issue
+    - dew_point and visibility_in_miles are directly correlated? (doesn’t make sense)
 
 
 ## Linear Regression Model 
