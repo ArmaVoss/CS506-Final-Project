@@ -14,7 +14,6 @@ A neural network-based regression model was employed to predict a continuous tar
 - **Mean Squared Error (MSE):** 1.243  
   On average, the squared error between the predicted and actual values is 1.243.
 
-*Inference:*  
 While the MLP Regressor captures a moderate amount of the data variability, there remains substantial unexplained variance.
 
 ---
@@ -28,8 +27,7 @@ This linear classification model was evaluated with the following performance me
 
 - **Confusion Matrix and Classification Report:**  
   The confusion matrix shows significant misclassification across classes, and the precision and recall values (ranging roughly from 0.35 to 0.47 and 0.21 to 0.53, respectively) indicate that the model is struggling to correctly identify instances for each class.
-
-*Inference:*  
+ 
 Logistic regression, which relies on linear decision boundaries, seems insufficient to capture the complexity of the data’s class structure. Its lower overall accuracy and imbalanced performance across classes suggest that a more flexible or non-linear model might be more appropriate.
 
 ---
@@ -43,8 +41,7 @@ This model builds a tree-like structure to classify the data and is capable of m
 
 - **Confusion Matrix and Classification Report:**  
   With precision values ranging from 0.55 to 0.78 and recall values from 0.60 to 0.73 across classes, the decision tree provides a more balanced performance compared to logistic regression.
-
-*Inference:*  
+ 
 The decision tree classifier outperformed logistic regression by capturing more complex patterns in the data, leading to higher overall accuracy and better class-wise performance.
 
 ---
