@@ -163,9 +163,9 @@ For this project, **seven different regression models** were applied to predict 
 | Decision Tree Classifier  | 63.7%    | 0.55 – 0.78      | 0.60 – 0.73  |
 | Logistic Regression       | 39.8%    | 0.35 – 0.47      | 0.21 – 0.53  |
 
-### Inference and Recommendations
+### Conclusion For First Half
 
-- **XGBoost Regressor** is the recommended model for traffic volume prediction due to its superior performance and low error.
-- **Random Forest** is a solid fallback model, especially when interpretability or resilience to noise is needed.
-- **Decision Tree Classifier** is the best choice for classification tasks in this domain.
+- **XGBoost Regressor** is the recommended model for traffic volume prediction due to its better performance and low error.
+- **Random Forest** is a good fallback model, especially when interpretability or resilience to noise is needed.
+- **Decision Tree Classifier** is the best choice for classification tasks.
 - **Linear and logistic models** can serve as simple baselines, but they underperform significantly on this dataset.
