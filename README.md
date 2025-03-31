@@ -20,7 +20,7 @@
   - Weather impact on traffic volume
 
 1. Hourly Traffic Trends
-<img src="figures/hourly_traffic_volume.png" width="500"/>
+<img src="figures/hourly_traffic_volume.png" width="750"/>
 
 -	Productivity Hours (6AM-6PM)
 -	Steady climb from 6AM with twin peaks at:
@@ -43,7 +43,7 @@
     -	Midnight anomaly - Tiny 11:50PM bump (bar closings/shift changes?)
  
 2. Weekday v/s Weekend Patterns
-<img src="figures/hourly_traffic_weekay_vs_weekend.png" width="500"/>
+<img src="figures/hourly_traffic_weekay_vs_weekend.png" width="750"/>
 
 - A. Commuter Dominance (Weekdays)
     - The 7AM surge shows a 40% increase in just 30 minutes
@@ -56,9 +56,9 @@
     - Weekend traffic needs consistent capacity all day
 
 3.	Comparing days of the week
-<img src="figures/hourly_traffic_by_day_of_week.png" width="500"/>
+<img src="figures/hourly_traffic_by_day_of_week.png" width="750"/>
 
-<img src="figures/Traffic_volume_by_time_and_week_heatmap_YlOrRd.png" width="500"/>
+<img src="figures/Traffic_volume_by_time_and_week_heatmap_YlOrRd.png" width="750"/>
 
 <img src="figures/Traffic_volume_by_time_and_week_heatmap_coolwarm.png" width="750"/>
 
@@ -78,12 +78,35 @@ Interesting Insights:
 - Higher activity in Friday as well as weekend evenings.
 
 4.	Weekday vs Weekend Ratio
-<img src="figures/Weekday_to_weekend_ratio.png" width="500"/>
+<img src="figures/Weekday_to_weekend_ratio.png" width="750"/>
 
 The black dotted line represent the ratio of 1. If the plot crosses the line (Which it does in most cases), it implies the traffic volume on the weekday at that time is that much busier than on weekends. Otherwise, it means that the weekend is busier.
 
 5.	Weather Impact on Volume
-<img src="figures/hourly_traffic_volume_by_weather.png" width="500"/>
+<img src="figures/hourly_traffic_volume_by_weather.png" width="750"/>
+
+Dominant Weather Impact
+- Clouds (33.2%) & Clear (27.4%) dominate the dataset, showing:
+    - 10-15% higher traffic during clear weather in morning peaks (7-9AM)
+    - Cloudy days maintain more stable volumes throughout the day
+- Rain (11.7%) shows:
+    - 20% reduction in AM peak traffic
+    - Less pronounced PM peak (people leave work earlier/stay later)
+Critical Findings
+- Thunderstorms (1.6%) cause:
+    - 30% AM peak reduction (people delay trips)
+    - 50% higher variability in PM traffic
+- Snow (8.1%) uniquely:
+    - Flattens the daily pattern (no clear peaks)
+    - Lowers night traffic more than day traffic
+- Mist/Fog:
+    - Morning impact: -12% volume
+    - Evening impact: -8% volume
+Unexpected Insights
+- Drizzle (3.6%) shows higher PM volumes than heavy rain (behavioral quirk - people go out when rain is light)
+- Clear evenings have 15% more traffic than cloudy evenings (leisure activities)
+- Haze (2.7%) has near-identical patterns to moderate fog but with less variance
+
 
 ## Linear Regression Model 
 Using the pre-processed dataset, the linear regression model yielded a mean squared error of approximately 0.50 and an R-squared value of 0.51, the model explains about 51% of the variability in traffic volume, demonstrating a moderate fit that serves as a baseline for more complicated, non-linear models.
