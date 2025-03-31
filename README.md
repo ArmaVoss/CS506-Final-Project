@@ -107,6 +107,25 @@ Unexpected Insights
 - Clear evenings have 15% more traffic than cloudy evenings (leisure activities)
 - Haze (2.7%) has near-identical patterns to moderate fog but with less variance
 
+6. Weather conditions at different times of the day
+<img src="figures/Traffic_volume_weather_boxplot.png" width="750"/>
+
+- Time-Based Trends
+    - Morning Traffic: Traffic volume is highest during the morning, especially under clear weather conditions, indicating peak activity during rush hours.
+    - Afternoon Traffic: Traffic remains relatively high but slightly lower than morning levels, showing a steady decline as the day progresses.
+    - Evening Traffic: There is a noticeable drop in traffic volume during the evening compared to morning and afternoon, reflecting reduced travel activity.
+    - Night Traffic: Nighttime traffic is consistently low across all weather types, demonstrating minimal travel during late hours.
+-	Weather-Based Trends
+    -	Clear Weather: Across all time periods, clear weather corresponds to higher traffic volumes, suggesting favorable conditions for travel.
+    -	Fog and Thunderstorms: These adverse weather conditions lead to significantly lower traffic volumes, especially at night.
+    -	Rain/Drizzle: Moderate traffic levels are observed during rain or drizzle in the morning and afternoon, but they decline sharply at night.
+-	Variability
+    -	Fog: Fog shows the widest variability in traffic volume during morning and evening hours, indicating inconsistent impacts depending on its severity.
+    -	Nighttime Consistency: At night, traffic volumes are uniformly low with minimal variability across most weather types.
+
+7. Correlation Heatmap
+<img src="figures/Weather_correlation_heatmap.png" width="750"/>
+
 
 ## Linear Regression Model 
 Using the pre-processed dataset, the linear regression model yielded a mean squared error of approximately 0.50 and an R-squared value of 0.51, the model explains about 51% of the variability in traffic volume, demonstrating a moderate fit that serves as a baseline for more complicated, non-linear models.
