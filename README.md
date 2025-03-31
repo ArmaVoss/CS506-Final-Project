@@ -107,21 +107,33 @@ XGBoost demonstrated strong predictive power for traffic volume forecasting. It 
 
 ## Model Comparison and Inferences
 
-For this project, four different regression models were applied to predict traffic volume after performing hyperparameter tuning using `GridSearchCV`. The models evaluated include:
+For this project, **seven different regression models** were applied to predict traffic volume after performing hyperparameter tuning using `GridSearchCV` where applicable. The models evaluated include:
 
-1. **Random Forest Regressor**  
-   An ensemble method that aggregates multiple decision trees for improved stability and accuracy.  
-   - Tuned hyperparameters: `n_estimators`, `max_depth`, `min_samples_split`, `min_samples_leaf`.
+1. **Linear Regression**  
+   A baseline model that assumes a linear relationship between features and target.  
+   - No hyperparameters tuned.
 
-2. **Gradient Boosting Regressor**  
-   Builds trees sequentially, with each tree correcting the errors of the previous one.  
-   - Tuned hyperparameters: `n_estimators`, `learning_rate`, `max_depth`.
+2. **Ridge Regression**  
+   A regularized linear model with L2 penalty to prevent overfitting.  
+   - Tuned hyperparameter: `alpha`.
 
-3. **Support Vector Regressor (SVR)**  
+3. **Lasso Regression**  
+   A linear model with L1 penalty that encourages sparsity in coefficients.  
+   - Tuned hyperparameter: `alpha`.
+
+4. **Support Vector Regressor (SVR)**  
    Uses support vectors to minimize prediction error while maintaining simplicity.  
    - Tuned hyperparameters: `C`, `epsilon`, `kernel`.
 
-4. **XGBoost Regressor**  
+5. **Random Forest Regressor**  
+   An ensemble method that aggregates multiple decision trees for improved stability and accuracy.  
+   - Tuned hyperparameters: `n_estimators`, `max_depth`, `min_samples_split`, `min_samples_leaf`.
+
+6. **Gradient Boosting Regressor**  
+   Builds trees sequentially, with each tree correcting the errors of the previous one.  
+   - Tuned hyperparameters: `n_estimators`, `learning_rate`, `max_depth`.
+
+7. **XGBoost Regressor**  
    A high-performance, scalable model widely used for structured data tasks.  
    - Tuned hyperparameters: `n_estimators`, `max_depth`, `learning_rate`, `subsample`, `colsample_bytree`.
 
