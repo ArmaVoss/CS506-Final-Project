@@ -58,9 +58,9 @@
 3.	Comparing days of the week
 <img src="figures/hourly_traffic_by_day_of_week.png" width="500"/>
 
-<img src="figures/Traffic_volume_by_time_and_week_coolwarm.png" width="500"/>
+<img src="figures/Traffic_volume_by_time_and_week_heatmap_YlOrRd.png" width="500"/>
 
-<img src="figures/Traffic_volume_by_time_and_week_YlOrRd.png" width="500"/>
+<img src="figures/Traffic_volume_by_time_and_week_heatmap_coolwarm.png" width="500"/>
 
 | Day                      | Notable Inferences    |
 |---------------------------|--------------------------------|
