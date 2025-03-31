@@ -41,6 +41,19 @@
     -	Pre-noon dip - Small but consistent 11AM lull (coffee break effect?)
     -	Evening steps - Clear 18:00 and 20:00 drops as people arrive home
     -	Midnight anomaly - Tiny 11:50PM bump (bar closings/shift changes?)
+ 
+2. Weekday v/s Weekend Patterns
+<img src="figures/hourly_traffic_weekay_vs_weekend.png" width="500"/>
+
+- A. Commuter Dominance (Weekdays)
+    - The 7AM surge shows a 40% increase in just 30 minutes
+    - 87% of weekday traffic occurs between 6AM-8PM vs. 72% on weekends
+- B. Leisure Economy (Weekends)
+    - Noon-4PM traffic is 15% higher than weekdays
+    - Evening decline starts 2 hours later than weekdays
+- C. Infrastructure Stress
+    -  Weekday AM peak requires 2.3x more capacity than overnight
+    - Weekend traffic needs consistent capacity all day
 
 
 
