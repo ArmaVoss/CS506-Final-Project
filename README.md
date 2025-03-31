@@ -60,7 +60,7 @@
 
 <img src="figures/Traffic_volume_by_time_and_week_heatmap_YlOrRd.png" width="500"/>
 
-<img src="figures/Traffic_volume_by_time_and_week_heatmap_coolwarm.png" width="500"/>
+<img src="figures/Traffic_volume_by_time_and_week_heatmap_coolwarm.png" width="750"/>
 
 | Day                      | Notable Inferences    |
 |---------------------------|--------------------------------|
@@ -77,6 +77,13 @@ Interesting Insights:
 - Weekend is pretty plateaued during 12-4PM
 - Higher activity in Friday as well as weekend evenings.
 
+4.	Weekday vs Weekend Ratio
+<img src="figures/Weekday_to_weekend_ratio.png" width="500"/>
+
+The black dotted line represent the ratio of 1. If the plot crosses the line (Which it does in most cases), it implies the traffic volume on the weekday at that time is that much busier than on weekends. Otherwise, it means that the weekend is busier.
+
+5.	Weather Impact on Volume
+<img src="figures/hourly_traffic_volume_by_weather.png" width="500"/>
 
 ## Linear Regression Model 
 Using the pre-processed dataset, the linear regression model yielded a mean squared error of approximately 0.50 and an R-squared value of 0.51, the model explains about 51% of the variability in traffic volume, demonstrating a moderate fit that serves as a baseline for more complicated, non-linear models.
