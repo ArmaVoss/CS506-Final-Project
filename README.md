@@ -101,8 +101,6 @@ For this project, four different regression models were applied to predict traff
 | Lasso                     | 0.50     | 0.51  |
 
 #### Observations:
--
-
 - ** Linear Regression**:
   Achieved results with no regularization of Linear Regression R²: 0.50 and RMSE 0.51
   Achieved results with Ridge Regression of R²: 0.50 and RMSE 0.51
