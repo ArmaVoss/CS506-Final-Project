@@ -10,7 +10,7 @@
 - Applied **Label Encoding** to `year`, `month`, and `day` for model compatibility.
 
 
-## Linear Regression -
+## Linear Regression Model Summary
 Using the pre-processed dataset, the linear regression model yielded a mean squared error of approximately 0.50 and an R-squared value of 0.51, the model explains about 64% of the variability in traffic volume, demonstrating a moderate fit that serves as a baseline for more complicated, non-linear models.
 
 We also tried two regularization methods, ridge regression (with regularization parameter alpha=10.0) and lasso(with regularization parameter alpha=.001), which yielded similar results:
