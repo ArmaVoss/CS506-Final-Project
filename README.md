@@ -55,7 +55,12 @@
     -  Weekday AM peak requires 2.3x more capacity than overnight
     - Weekend traffic needs consistent capacity all day
 
+3.	Comparing days of the week
+<img src="figures/hourly_traffic_by_day_of_week.png" width="500"/>
 
+<img src="figures/hourly_traffic_by_day_of_week.png" width="500"/>
+
+<img src="figures/Traffic_volume_by_time_&_week_YlOrRd.png" width="500"/>
 
 ## Linear Regression Model 
 Using the pre-processed dataset, the linear regression model yielded a mean squared error of approximately 0.50 and an R-squared value of 0.51, the model explains about 51% of the variability in traffic volume, demonstrating a moderate fit that serves as a baseline for more complicated, non-linear models.
