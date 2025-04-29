@@ -27,7 +27,7 @@ This suggests that increasing network complexity helped the model capture more u
 To improve performance, the Logistic Regression model was updated by scaling all features using StandardScaler and increasing the regularization parameter C to 10. This linear classification model was evaluated with the following performance metrics:
 
 - **Accuracy:** 39.8%  (previous value: 39.8%)
-  Despite feature scaling and weaker regularization, the model’s overall accuracy remained essentially unchanged compared to the midterm model.
+    Despite feature scaling and weaker regularization, the model’s overall accuracy remained essentially unchanged compared to the midterm model.
 
 - **Confusion Matrix and Classification Report:**  
     The progressed model continued to misclassify a significant number of instances, and class imbalance persisted. Precision and recall remained low to moderate across classes: precision values ranged from 0.35 to 0.47. and recall values ranged from 0.21 to 0.54. F1-scores remained moderate, between 0.28 and 0.50, across most classes.
