@@ -25,6 +25,8 @@ https://www.youtube.com/watch?v=pZ9qj7ScW2M
 1. Hourly Traffic Trends
 <img src="figures/hourly_traffic_volume.png" width="750"/>
 
+<img src="figures/Circular_traffic_pattern.png" width="750"/>
+
 -	Productivity Hours (6AM-6PM)
 -	Steady climb from 6AM with twin peaks at:
     -	~8AM (sharp school/work commute)
@@ -48,6 +50,8 @@ https://www.youtube.com/watch?v=pZ9qj7ScW2M
 2. Weekday v/s Weekend Patterns
 <img src="figures/hourly_traffic_weekay_vs_weekend.png" width="750"/>
 
+<img src="figures/Traffic_composition_by_type_of_day.png" width="750"/>
+
 - A. Commuter Dominance (Weekdays)
     - The 7AM surge shows a 40% increase in just 30 minutes
     - 87% of weekday traffic occurs between 6AM-8PM vs. 72% on weekends
@@ -60,6 +64,8 @@ https://www.youtube.com/watch?v=pZ9qj7ScW2M
 
 3.	Comparing days of the week
 <img src="figures/hourly_traffic_by_day_of_week.png" width="750"/>
+
+<img src="figures/Day_of_week_pie_bar_chart" width="750"/>
 
 <img src="figures/Traffic_volume_by_time_and_week_heatmap_YlOrRd.png" width="750"/>
 
@@ -128,6 +134,7 @@ Unexpected Insights
 
 7. Correlation Heatmap
 <img src="figures/Weather_correlation_heatmap.png" width="750"/>
+
 | Variable Pair                 |Correlation(r)                     |Interpretation                          |
 |-------------------------------|-----------------------------------|----------------------------------------|
 | humidity ↔ wind_speed         | -0.15                             | Higher humidity → Lower wind speeds    |
@@ -145,6 +152,22 @@ Insights
     -	Wind conditions (r ≈ 0.016)
 - Unclear issue
     - dew_point and visibility_in_miles are directly correlated? (doesn’t make sense)
+ 
+Looking at traffic volume vs temperature (in Kelvin), we see a straightforward pattern
+ 
+<img src="figures/Feature_correlation_small.png" width="750"/>
+
+<img src="figures/Traffic_v_temp_hexagon.png" width="750"/>
+
+<img src="figures/Traffic_v_temp_hexagon_2.png" width="750"/>
+
+8. Miscellaneous graphs
+   
+<img src="figures/Daily_traffic_anomalies.png" width="750"/>
+
+<img src="figures/Seasonal_patterns.png" width="750"/>
+
+<img src="figures/Calendar_traffic_heatmap.png" width="750"/>
 
 
 ## Linear Regression Model 
