@@ -184,46 +184,49 @@ We also tried two regularization methods, ridge regression (with regularization 
 | Lasso  Regression                    | 0.50              | 0.51      |
 
 
-## MLP Regressor Model
+---
 
-A neural network-based regression model was employed to predict a continuous target variable. The key performance metrics for this model were:
+## MLP Regressor
 
-- **R² Score**: 0.493  
-  This indicates that the model explains about 49% of the variance in the target variable.
+The MLP Regressor was deepened by adding more hidden layers (512, 256, 128), increasing the number of iterations to 1000, and disabling early stopping. The goal was to allow the model greater capacity to fit the training data.
 
-- **Mean Squared Error (MSE)**: 1.243  
-  On average, the squared error between the predicted and actual values is 1.243.
+- **R² Score:** 0.720 (previous value: 0.493) 
+    The model explained approximately 72% of the variance in traffic volume, a substantial improvement from the earlier version.
 
-While the MLP Regressor captures a moderate amount of the data variability, there remains substantial unexplained variance. It achieved a moderate performance, indicating that while the model explains nearly half of the variance, further optimization could improve its predictive ability.
+- **Mean Squared Error (MSE):**  0.685 (previous value: 1.243)  
+    The MSE nearly halved from the previous version, indicating more accurate predictions.
 
+This suggests that increasing network complexity helped the model capture more underlying patterns in the data. However, the improvement may come at the cost of overfitting, as generalization to unseen data would need to be further validated.
 
-## Logistic Regression Model
+---
 
-Performance metrics of this linear classification model were as follows:
+## Logistic Regression
 
-- **Accuracy**: 39.8%  
-  The model correctly classified about 40% of the instances.
+To improve performance, the Logistic Regression model was updated by scaling all features using StandardScaler and increasing the regularization parameter C to 10. This linear classification model was evaluated with the following performance metrics:
 
-### Confusion Matrix and Classification Report
+- **Accuracy:** 39.8%  (previous value: 39.8%)
+    Despite feature scaling and weaker regularization, the model’s overall accuracy remained essentially unchanged compared to the midterm model.
 
-The confusion matrix shows significant misclassification across classes. Precision and recall values ranged roughly from 0.35 to 0.47 and 0.21 to 0.53, respectively. This indicates that the model is struggling to correctly identify instances for each class.
+- **Confusion Matrix and Classification Report:**  
+    The progressed model continued to misclassify a significant number of instances, and class imbalance persisted. Precision and recall remained low to moderate across classes: precision values ranged from 0.35 to 0.47. and recall values ranged from 0.21 to 0.54. F1-scores remained moderate, between 0.28 and 0.50, across most classes.
+  
+These results reinforce the limitations of logistic regression for this task: the model’s linear decision boundaries are insufficient to capture the underlying complexity and non-linear relationships present in the traffic dataset, even after addressing feature scaling and regularization.
 
-Logistic regression, which relies on linear decision boundaries, seems insufficient to capture the complexity of the data’s class structure. Its lower overall accuracy and imbalanced performance across classes suggest that a more flexible or non-linear model might be more appropriate.
+---
 
-Overall, with an accuracy of about 40%, logistic regression struggled with the multi-class problem, likely due to its reliance on linear separability, which does not sufficiently capture the data’s complexity.
+## Decision Tree Classifier
 
-## Decision Tree Classifier Model
+The Decision Tree model was allowed to grow fully by removing depth constraints and minimizing the stopping criteria.
 
-This model builds a tree-like structure to classify the data and is capable of modeling non-linear relationships. The performance metrics were:
+- **Accuracy:** 81.5% (previous value: 63.7%)
+    The model showed a significant boost in accuracy compared to the midterm version.
 
-- **Accuracy**: 63.7%  
-  The decision tree correctly classified approximately 64% of the instances.
+- **Confusion Matrix and Classification Report:** 
+    Precision and recall values ranged from 0.79 to 0.85, with F1-scores around 0.80 for all classes, indicating balanced class-wise performance.
 
-### Confusion Matrix and Classification Report
+The improved accuracy suggests that the fully grown tree captured complex patterns in the data well. However, the depth and flexibility of the tree likely introduce overfitting, a known behavior of unpruned decision trees.
 
-With precision values ranging from 0.55 to 0.78 and recall values from 0.60 to 0.73 across classes, the decision tree provides a more balanced performance compared to logistic regression.
-
-The decision tree classifier outperformed logistic regression by capturing more complex patterns in the data, leading to higher overall accuracy and better class-wise performance. It was the best performer among the classification models, making it a strong candidate for this dataset due to its ability to model non-linear relationships.
+---
 
 ## XGBoost Model 
 
