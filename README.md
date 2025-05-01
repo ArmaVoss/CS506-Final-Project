@@ -239,11 +239,11 @@ The decision tree classifier outperformed logistic regression by capturing more 
 - **Feature 3 (Holiday)** had minimal importance in both metrics, suggesting limited impact on traffic volume predictions.
 
 ### Comparison Between A Generalized Vs Overfit XGB Model
-- To compare what this model overfit would look like, we cranked up the depth and changed some regularization paramters to further show that our model has the best that it can, and that overfitting is a bad route to go down
+- To compare what this model overfit would look like, we cranked up the depth and changed some regularization paramaters to further show that our model has been tuned to generalize, and that overfitting is a bad route to go down.
 - This figure shows the differences of the MSE in what a model that overfits vs how one that generalizes.
 
 <img src="figures/xgb_norm_vs_overfit.png" width="300"/>
-- As you can see, overfitting inherintely causes us to learn only how to predict well on the training set, hindering our model from doing well on unseen data.
+- As you can see, overfitting results in the model to only learn only how to predict well on the training set, hindering our model from doing well on unseen data.
 
 ### Conclusion
 XGBoost demonstrated strong predictive power for traffic volume forecasting. It generalized well to unseen data and offered interpretability through feature importance analysis.
