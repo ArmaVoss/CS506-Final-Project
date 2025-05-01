@@ -162,6 +162,8 @@ Looking at traffic volume vs temperature (in Kelvin), we see a straightforward p
 <img src="figures/Traffic_v_temp_hexagon_2.png" width="750"/>
 
 8. Miscellaneous graphs
+
+No necessarily notable information to glean, however these graphs highlight a new issue: a few months of data is missing from Aug 2014 to June 2015, which can be seen in the graphs below. This might skew the models, but the residual effect should not overpower actual learning.
    
 <img src="figures/Daily_traffic_anomalies.png" width="750"/>
 
