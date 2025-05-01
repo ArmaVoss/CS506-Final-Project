@@ -1,4 +1,4 @@
-# Traffic Flow Prediction for Chicago Midterm Report
+# Traffic Flow Prediction for Chicago Final Report
 
 ## Presentation 
 https://www.youtube.com/watch?v=pZ9qj7ScW2M
@@ -231,13 +231,19 @@ The decision tree classifier outperformed logistic regression by capturing more 
   <img src="figures/Importance_by_gain.png" width="300"/>
 </div>
 
-
 ### Feature Importance
 - **By Weight**:
   - **Feature 10 (Temperature)** was the most frequently used for splits.
 - **By Gain**:
   - **Feature 2 (Time of Day: Morning, Afternoon, Evening)** contributed the most to improving predictive accuracy.
 - **Feature 3 (Holiday)** had minimal importance in both metrics, suggesting limited impact on traffic volume predictions.
+
+### Comparison Between A Generalized Vs Overfit XGB Model
+- To compare what this model overfit would look like, we cranked up the depth and changed some regularization paramters to further show that our model has the best that it can, and that overfitting is a bad route to go down
+- This figure shows the differences of the MSE in what a model that overfits vs how one that generalizes.
+
+<img src="figures/xgb_norm_vs_overfit" width="300"/>
+- As you can see, overfitting inherintely causes us to learn only how to predict well on the training set, hindering our model from doing well on unseen data.
 
 ### Conclusion
 XGBoost demonstrated strong predictive power for traffic volume forecasting. It generalized well to unseen data and offered interpretability through feature importance analysis.
@@ -300,8 +306,7 @@ For this project, **seven different regression models** were applied to predict 
 | Decision Tree Classifier  | 63.7%    | 0.55 – 0.78      | 0.60 – 0.73  |
 | Logistic Regression       | 39.8%    | 0.35 – 0.47      | 0.21 – 0.53  |
 
-### Conclusion For First Half
-
+### Conclusion 
 - **XGBoost Regressor** is the recommended model for traffic volume prediction due to its better performance and low error.
 - **Random Forest** is a good fallback model, especially when interpretability or resilience to noise is needed.
 - **Decision Tree Classifier** is the best choice for classification tasks.
