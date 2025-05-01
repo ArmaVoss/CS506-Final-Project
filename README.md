@@ -242,7 +242,7 @@ The decision tree classifier outperformed logistic regression by capturing more 
 - To compare what this model overfit would look like, we cranked up the depth and changed some regularization paramters to further show that our model has the best that it can, and that overfitting is a bad route to go down
 - This figure shows the differences of the MSE in what a model that overfits vs how one that generalizes.
 
-<img src="figures/xgb_norm_vs_overfit" width="300"/>
+<img src="figures/xgb_norm_vs_overfit.png" width="300"/>
 - As you can see, overfitting inherintely causes us to learn only how to predict well on the training set, hindering our model from doing well on unseen data.
 
 ### Conclusion
