@@ -327,12 +327,13 @@ For this project, **seven different regression models** were applied to predict 
 | Lasso Regression          | 0.50     | 0.51   |
 
 
+
 ### Classification Models
 
 | Model                     | Accuracy | Precision Range | Recall Range |
 |---------------------------|----------|------------------|--------------|
-| Decision Tree Classifier  | 63.7%    | 0.55 – 0.78      | 0.60 – 0.73  |
-| Logistic Regression       | 39.8%    | 0.35 – 0.47      | 0.21 – 0.53  |
+| Decision Tree Classifier  | 81.5%    | 0.79 – 0.85      | 0.80 – 0.85  |
+| Logistic Regression       | 39.8%    | 0.35 – 0.47      | 0.21 – 0.54  |
 
 ### Conclusion 
 - **XGBoost Regressor** is the recommended model for traffic volume prediction due to its better performance and low error.
