@@ -340,3 +340,48 @@ For this project, **seven different regression models** were applied to predict 
 - **Random Forest** is a good fallback model, especially when interpretability or resilience to noise is needed.
 - **Decision Tree Classifier** is the best choice for classification tasks.
 - **Linear and logistic models** can serve as simple baselines, but they underperform significantly on this dataset.
+
+
+FURTHER EXPERIMENTS :
+
+Results
+Random Forest :
+
+Whole Dataset:
+
+R²: 0.98
+MSE: 0.055
+Cross-Validation (5-fold):
+
+R² scores: [-31.93, -13.01, -4.23, -260.13, -29.50]
+Mean R²: -67.76
+MSE scores: [7.75, 3.19, 1.21, 3.59, 7.27]
+Mean MSE: 4.60
+Interpretation
+The whole dataset results look excellent because the model was tested on the same data it was trained on (overfitting).
+The cross-validation results are poor (negative R²) because the model fails to generalize to unseen data.
+Possible reasons:
+Overfitting to noise.
+Weak or irrelevant features.
+Small dataset size or high data variance.
+Gradient Booster :
+
+Results
+Whole Dataset:
+
+R²: 0.98
+MSE: 0.055
+Cross-Validation (5-fold):
+
+R² scores: [-31.93, -13.01, -4.23, -260.13, -29.50]
+Mean R²: -67.76
+MSE scores: [7.75, 3.19, 1.21, 3.59, 7.27]
+Mean MSE: 4.60
+Interpretation
+The whole dataset results look excellent because the model was tested on the same data it was trained on (overfitting).
+The cross-validation results are poor (negative R²) because the model fails to generalize to unseen data.
+Possible reasons:
+Overfitting to noise.
+Weak or irrelevant features.
+Small dataset size or high data variance.
+
