@@ -1,5 +1,10 @@
 # Traffic Flow Prediction for Chicago Final Report
 
+## Running Some Of Our Models
+-  Go ahead and enter the pipeline directory, you should see requirements.txt and pipeline.py
+-  Just go ahead and run pipeline.py it should call requirements.txt and run 4 of our different models
+-  If for some reason it does not work, just run the two files in the pipeline file after downloading the requirements
+
 ## Presentation 
 https://www.youtube.com/watch?v=vXKxjjByL7o
 ## Data Preprocessing
